@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: 'order-service-api'
+  jpa:
+    hibernate:
+      ddl-auto: 'create'
+  datasource:
+    url: ''
+    username: ''
+    password: ''
+    driver-class-name: ''
+    hikari:
+      connection-timeout: 20000
+springdoc:
+  open-api:
+    info:
+      title: 'Order Service API'
+      description: 'API responsible for managing orders'
+      version: '1.0.0'
+server:
+  port: ${SERVER_PORT:8100}
