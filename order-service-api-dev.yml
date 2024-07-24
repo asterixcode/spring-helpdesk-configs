@@ -3,7 +3,7 @@ spring:
     name: 'order-service-api'
   jpa:
     hibernate:
-      ddl-auto: 'create'
+      ddl-auto: '${JPA_HIBERNATE_DDL_AUTO}'
   datasource:
     url: '${DATASOURCE_URL}'
     username: '${DATASOURCE_USERNAME}'
